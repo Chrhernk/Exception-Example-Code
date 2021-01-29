@@ -20,7 +20,7 @@ and should do more than catch the exceptions -- Should have good user Experience
 
 // Prototype functions here
 
-void DoWork();
+void DoWork(); 
 
 int main()
 {
