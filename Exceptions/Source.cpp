@@ -39,8 +39,7 @@ void DoWork()
 		std::cout << "\n ***Please input a number from 1 to 10*** \n";
 		int MyNumber;
 		std::cin >> MyNumber;
-		if (MyNumber > 10 || MyNumber < 1)
-		{
+		if (MyNumber > 10 || MyNumber < 1) // If number is less than ten, but greather than one		{
 			throw 11;
 		}
 
