@@ -39,16 +39,17 @@ void DoWork()
 		std::cout << "\n ***Please input a number from 1 to 10*** \n";
 		int MyNumber;
 		std::cin >> MyNumber;
-		if (MyNumber > 10 || MyNumber < 1) // If number is less than ten, but greather than one		{
-			throw 11;
+		if (MyNumber > 10 || MyNumber < 1) // If number is less than ten, but greater than one		
+		{
+			throw 11; // throw code
 		}
 
-		for (int i = 0; i < 5; i++) 
+		for (int i = 0; i < 5; i++)  // i starts at 0, counts up if less than five
 		{
 			std::cout << "\nWorking on task " << i << std::endl;
 			if (i == 3)
 			{
-				throw 33;
+				throw 33; // when i reaches 3, throws code 33 for errors
 			}
 		}
 	}
@@ -57,7 +58,7 @@ void DoWork()
 		// catch (int error_code
 		int error_code = 0;
 
-		if (error_code == 11) { std::cout << "\n The user can not count pass ten!" << std::endl; }
+		if (error_code == 11) { std::cout << "\n The user can not count pass ten! Train them better Please!" << std::endl; }
 		else if (error_code == 33) { std::cout << "\n Error While Working on Task, Please inspect code, and Try again! " << std::endl; }
 		else { std::cout << "\n Error While Working! Sorry for the Trouble, as we can not find where it is!" << std::endl; }
 	}
