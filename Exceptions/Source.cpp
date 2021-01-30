@@ -53,10 +53,10 @@ void DoWork()
 			}
 		}
 	}
-	catch (...)
+	catch (int error_code)
 	{
-		// catch (int error_code
-		int error_code = 0;
+		// catch (...)
+	
 
 		if (error_code == 11) { std::cout << "\n The user can not count pass ten! Train them better Please!" << std::endl; }
 		else if (error_code == 33) { std::cout << "\n Error While Working on Task, Please inspect code, and Try again! " << std::endl; }
